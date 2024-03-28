@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+</head>
+<body class="flex  h-screen justify-center items-center bg-background font-mono">
+    <!-- CONTAINER -->
+    <div class=" rounded-xl shadow-lg text-center space-x-4">
+        <div>
+            <div class="p-6 bg-pink rounded-t-lg">
+                <h2 class="text-xl font-bold text-brown underline-offset-1">CURRENCY CONVERTER</h2>
+            </div>
+            
+            <form class="p-6 space-y-14 bg-skin rounded-b-lg text-brown" id="box">
+                <div class="amount">
+                    <p>enter amount</p>
+                    <input class="text-center border-2 rounded-md" value="1" type="text"/>
+                </div>
+
+                <!--DROPDOWN-->
+
+                <div class="dropdown flex justify-center  items-center">
+    
+                 <!-- from -->
+                    <div class="from">
+                        <p class="font-medium "> From </p>
+                        <!-- SELECT PART -->
+                        <div>
+                            <img class="shrink-0 h-10 w-10 mx-auto mb-2" src="https://flagsapi.com/US/shiny/64.png">
+
+                            <select class=" p-0.5 rounded-md text-center"  name="from">
+                                <option value="USD">USD</option>
+                                <option value="INR">
+                                    INR
+                                </option>
+                                <option value="EURO">
+                                    EURO
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <i class="fa-solid fa-arrow-right-arrow-left mx-14"></i>
+    
+                  <!-- to part -->
+    
+                    <div class="to">
+                        <p>To</p>
+                        <div>
+                            <img class="shrink-0  h-10 w-10 mx-auto mb-2" src="https://flagsapi.com/IN/shiny/64.png">
+
+                            <select class="select p-0.5 rounded-md text-center" name="to">
+                                <!-- <option value="USD">
+                                    USD
+                                </option>-->
+                                <option value="INR" selected>
+                                    INR
+                                </option> 
+                            </select>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="space-y-2">
+                    <div class="msgtext"> 1 USD = 83 INR</div>
+                    <button class="p-2 border-opacity-10 rounded-md text-sm bg-pink cursor-pointer "> Get Exchange Rate</button>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
